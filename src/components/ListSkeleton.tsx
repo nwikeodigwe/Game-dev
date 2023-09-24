@@ -1,5 +1,4 @@
 import { HStack, Skeleton,Text, SkeletonText } from "@chakra-ui/react";
-import React from "react";
 
 export const ListSkeleton = () => {
   return (
