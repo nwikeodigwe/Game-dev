@@ -6,15 +6,14 @@ export interface FetchResponse<T> {
   results: T[];
 }
 
-const axiosInstance =  axios.create({
+const axiosInstance = axios.create({
   baseURL: "https://api.rawg.io/api",
   params: {
     key: "2c430aae8f11470ca3e14b8c128734ed",
   },
 });
 
-
-class APIClient<T>{
+class APIClient<T> {
   endpoint: string;
 
   constructor(endpoint: string) {
@@ -24,8 +23,8 @@ class APIClient<T>{
   getAll = (config: AxiosRequestConfig) => {
     return axiosInstance
       .get<FetchResponse<T>>(this.endpoint, config)
-      .then(res => res.data);
-  }
+      .then((res) => res.data);
+  };
 }
 
 export default APIClient;
