@@ -1,11 +1,5 @@
 import { create } from "zustand";
-
-interface GameQuery {
-  genreId?: number;
-  platformId?: number;
-  sortOrder?: string;
-  searchText?: string;
-}
+import { GameQuery } from "./entities/GameQuery";
 
 interface GameQueryStore {
   gameQuery: GameQuery;
