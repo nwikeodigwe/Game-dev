@@ -3,7 +3,7 @@ import useGame from "../hooks/useGame";
 import { GridItem, Heading, SimpleGrid, Spinner } from "@chakra-ui/react";
 import { ExpandableText } from "../components/ExpandableText";
 import { GameAttribute } from "../components/GameAttribute";
-import { GameTrailer } from "../components/Gametrailer";
+import { GameTrailer } from "../components/GameTrailer";
 import GameScreenShots from "../components/GameScreenShots";
 
 export const GameDetailPage = () => {
